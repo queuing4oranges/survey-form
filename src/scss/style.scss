@@ -14,15 +14,17 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: "Alegreya Sans SC";
+    width: 100%;
     background-color: #001555;
     
 }
 form{
-    width: 70%;
+    width: 100%;
 }
 .main{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background-color: #255c99;
     flex: auto;
     width: 650px;
@@ -40,7 +42,7 @@ form{
     flex-direction: column;
     align-items: center;
     display: flex;
-    width: 70%;
+    width: 80%;
     inline-size: max-content;
 }
 
@@ -55,6 +57,13 @@ form{
     width: 100%;
 }
 
-input>name{
-    width: 30px;
+#name, 
+#email, 
+#feedback
+{
+    width: 100%;
+}
+
+textarea{
+    width: 90px;
 }
