@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey page</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400;700&display=swap">
+  </head>
+  
+  <body>
+  
+    <header>
+      <h1>Feedback Form</h1>
+    </header>
+
+    <div class="main">
+    <div class="left"></div>
+    <div class="middle">
+    <form>
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" /><br />
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="batch">Choose batch</label> <br />
+        <select name="choose_batch" id="batch">
+          <option value="winter2020" selected="selected">Winter 2020</option>
+          <option value="spring2020">Spring 2020</option>
+          <option value="autumn2020" selected="selected">Autumn 2020</option>
+        </select> 
+    
+      <p>Did you complete all the exercises from week1?</p>
+      <label for="yes">Yes</label>
+      <input type="radio" name="binary" id="yes" value="1" checked />
+      <label for="no">No</label>
+      <input type="radio" name="binary" id="no" value="0" />
+
+      <p>Choose your favorite exercises</p>
+      
+      <form class="checkthis">
+        <!--a form with checkboxes-->
+        <input
+          type="checkbox"
+          id="selectors"
+          name="selectors"
+          value="selectors"
+        />
+        <label for="selectors"> CSS Selectors</label><br />
+
+        <input type="checkbox" id="book" name="book" value="book" />
+        <label for="book"> Book page</label><br />
+
+        <input type="checkbox" id="belfast" name="belfast" value="belfast" />
+        <label for="belfast"> Belfast International Kindergarten</label><br />
+
+        <input
+          type="checkbox"
+          id="crownsnest"
+          name="crownsnest"
+          value="crownsnest"
+        />
+        <label for="crownsnest"> Crownsnest Retreat</label><br />
+
+        <input type="checkbox" id="google" name="google" value="google" />
+        <label for="google"> Google page</label><br />
+
+        <input
+          type="checkbox"
+          id="documentation"
+          name="documentation"
+          value="documentation"
+        />
+        <label for="documentation"> Documentation page</label><br />
+
+        <input type="checkbox" id="aneta" name="aneta" value="aneta" />
+        <label for="aneta">Aneta Webbie Personal Portfolio</label>
+   
+      <p class="feedback">Write feedback</p>
+      <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea><br>
+      <input class="submit"   type="submit" value="Submit" />
+    </div>
+    <div class="right"></div>
+  </body>
+</html>
